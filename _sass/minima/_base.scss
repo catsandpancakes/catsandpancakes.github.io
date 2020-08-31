@@ -56,7 +56,14 @@ main {
  */
 img {
   max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 7px;
   vertical-align: middle;
+
+  //uncomment the following if images are to be centered. 
+  //margin: auto;
+  //display: block;
 }
 
 
@@ -102,8 +109,8 @@ h1, h2, h3, h4, h5, h6 {
  * Horizontal Rule
 */
 hr {
-  display:block;
-  color:$grey-color-light;
+  display: block;
+  color: $grey-color-light;
   border-width: 1px;
   border-style: ridge;
 }
@@ -159,13 +166,13 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 1px;
+  //border: 1px solid $grey-color-light;
+  border-radius: 7px;
   background-color: rgb(228, 228, 228);
 }
 
 code {
-  padding: 1px 5px;
+  padding: 1px 3px;
 }
 
 pre {
