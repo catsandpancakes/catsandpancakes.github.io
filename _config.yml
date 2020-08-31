@@ -26,6 +26,13 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://catsandpancakes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!--excerpt-->"
 
+# Plugins
+plugins:
+  - jekyll-paginate
+
+# Paginator Settings
+paginate: 4
+
 # Build settings
 theme: minima
 

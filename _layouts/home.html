@@ -3,40 +3,32 @@ layout: default
 ---
 
 <div class="home">
-  <!--{%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}-->
-
   <header class="post-header">
     <div class="post-title">Home</div>
   </header>
 
+  {% include paginator.html %}
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-		{%- assign est_time = post.content | strip_html | strip_newlines | remove: " " | size | divided_by: 400 | plus: 1 -%}
-        {%- assign date_format = site.minima.date_format | default: "%A, %d %B %Y" -%}
-        <span class="post-meta">🕑 {{ post.date | date: date_format }} | 💻 ricepancakes | 📖 {{ est_time }} minutes</span>
-        <h1>
-          <a class="" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h1>
-        {{ post.excerpt }}
-		<h3><a href="{{ post.url | relative_url }}"><br/>Continue Reading...</a></h3>
-		<br />
-		<hr />
-        <!--{%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}-->
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
-  {%- endif -%}
+  <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
+  <ul class="post-list">
+    {%- for post in paginator.posts -%}
+    <li>
+      {%- assign est_time = post.content | strip_html | strip_newlines | remove: " " | size | divided_by: 400 | plus: 1 -%}
+      {%- assign date_format = site.minima.date_format | default: "%A, %d %B %Y" -%}
+      <span class="post-meta">🕑 {{ post.date | date: date_format }} | 💻 ricepancakes | 📖 {{ est_time }} minutes</span>
+      <h1>
+        <a class="" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h1>
+      {{ post.excerpt }}
+  <h3><a href="{{ post.url | relative_url }}"><br/>Continue Reading...</a></h3>
+  <br />
+  <hr />
+    </li>
+    {%- endfor -%}
+  </ul>
 </div>
+
+{% include paginator.html %}

@@ -1,4 +1,52 @@
 /**
+ * Pagination
+ */
+
+.pagination{
+  text-align: left;
+  color: $black-color;
+}
+
+.previous{
+  font-size: x-large;
+  display: inline-block;
+  color: $brand-color;
+
+  &:visited{
+    color: $brand-color;
+  }
+}
+
+.previous_inactive{
+  font-size: x-large;
+  display: inline-block;
+  color: rgb(200,200,200);
+}
+
+.next{
+  font-size: x-large;
+  display: inline-block;
+  color: $brand-color;
+  
+  &:visited{
+    color: $brand-color;
+  }
+}
+
+.next_inactive{
+  font-size: x-large;
+  display: inline-block;
+  color: rgb(200,200,200);
+}
+
+.page_number{
+  font-size: large;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(0,0,0);
+}
+
+/**
  * Site header
  */
 .site-header {
