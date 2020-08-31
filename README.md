@@ -12,7 +12,7 @@ This site is running on [Jekyll](https://jekyllrb.com/), with a customised [Mini
 
 I'm still a newbie at CSS/HTML and web design in general, so any tips are welcome. 
 
-I do my write-ups with [Joplin](https://joplinapp.org/), which are exported in markdown format, then imported into Jekyll. This used to be hosted on WordPress.com, but due workflow  issues and some formatting issues, I decided to migrate this site to GitHub Pages before it got too big to migrate. 
+I do my write-ups with [Joplin](https://joplinapp.org/), which are exported in markdown format, then imported into Jekyll. This used to be hosted on WordPress.com, but due to workflow  issues and some formatting issues, I decided to migrate this site to GitHub Pages before it got too big to migrate. 
 
 My preferred code editor of choice is [Visual Studio Code](https://code.visualstudio.com/) and occassionally [Notepad++](https://notepad-plus-plus.org/). 
 
