@@ -2,46 +2,67 @@
  * Pagination
  */
 
+.pagination a, .pagination span{
+  padding: 5px 10px;
+  border: 1px solid $grey-color-light;
+  background-color: $background-color;
+  display: inline-block;
+}
+
+.pagination a{
+  vertical-align: middle;
+
+  &:hover{
+    vertical-align: middle;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+}
+
 .pagination{
   text-align: left;
-  color: $black-color;
 }
 
 .previous{
   font-size: x-large;
-  display: inline-block;
   color: $brand-color;
 
   &:visited{
     color: $brand-color;
   }
+
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .previous_inactive{
+  vertical-align: middle;
   font-size: x-large;
-  display: inline-block;
   color: rgb(200,200,200);
 }
 
 .next{
   font-size: x-large;
-  display: inline-block;
   color: $brand-color;
   
   &:visited{
     color: $brand-color;
   }
+
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .next_inactive{
+  vertical-align: middle;
   font-size: x-large;
-  display: inline-block;
   color: rgb(200,200,200);
 }
 
 .page_number{
   font-size: large;
-  display: inline-block;
   vertical-align: middle;
   color: rgb(0,0,0);
 }
