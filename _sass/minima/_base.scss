@@ -98,6 +98,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/**
+ * Horizontal Rule
+*/
+hr {
+  display:block;
+  color:$grey-color-light;
+  border-width: 1px;
+  border-style: ridge;
+}
+
 
 /**
  * Links
@@ -150,8 +160,8 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  border-radius: 1px;
+  background-color: rgb(228, 228, 228);
 }
 
 code {

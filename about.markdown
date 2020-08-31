@@ -10,6 +10,4 @@ This blog is mainly for HackTheBox/VulnHub write-ups, but I will only be doing w
 
 If you need to contact me, you may either [email me](mailto:ricepancakes@protonmail.com), or drop me a message at the [HackTheBox forums](https://forum.hackthebox.eu/profile/ricepancakes). I will try to get back to you as soon as I can. 
 
-This site is using a modified version of Jekyll's default `minima` theme.
-
 Cheers.
