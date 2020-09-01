@@ -29,6 +29,7 @@ excerpt_separator: "<!--excerpt-->"
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Paginator Settings
 paginate: 3
