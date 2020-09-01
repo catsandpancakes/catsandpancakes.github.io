@@ -13,7 +13,7 @@ This box took a lot of time and a lot of tears. It definitely wasn't *quick* at 
 After how hard the rest of the box is, root is pretty brainless in comparison. Also, if you're still running ESIGate 5.2 and below (or really, anything that is vulnerable to ESI injection), please update it. 
 
 Gear up for the longest write-up I have written yet. 
-
+	
 In this box, we will be tackling: 
 
 1. [HTTP/3](https://http3.net/)
@@ -106,17 +106,17 @@ Awesome, we have something.
 Let's start by grabbing any links that are accessible from `portal.quick.htb`. 
 
 ```text
-./http-client https://portal.quick.htb/index.php >> index-page.html
-./http-client https://portal.quick.htb/index.php?view=contact >> contact.html
-./http-client https://portal.quick.htb/index.php?view=about >> about.html
-./http-client https://portal.quick.htb/index.php?view=docs >> docs.html
+./http3-client https://portal.quick.htb/index.php >> index-page.html
+./http3-client https://portal.quick.htb/index.php?view=contact >> contact.html
+./http3-client https://portal.quick.htb/index.php?view=about >> about.html
+./http3-client https://portal.quick.htb/index.php?view=docs >> docs.html
 ```
 
 There are some pdf files in `/docs`, so let's grab those too. 
 
 ```text
-./http-client https://portal.quick.htb/docs/QuickStart.pdf >> QuickStart.pdf
-./http-client https://portal.quick.htb/docs/Connectivity.pdf >> Connectivity.pdf
+./http3-client https://portal.quick.htb/docs/QuickStart.pdf >> QuickStart.pdf
+./http3-client https://portal.quick.htb/docs/Connectivity.pdf >> Connectivity.pdf
 ```
 
 Let's start enumerating the files. 
@@ -364,7 +364,7 @@ We got something back from the machine. Nice. Let's see what this actually does 
 
 ![51c6cfcdef1033ab65002618b810667d.png](/images/htb-quick/12b7e025018d45d088c1115497dcd54c.png)
 
-This seems to be putting a file in `/var/www/jobs`, then chmod to 0777, [which doesn't work because it's in quotes](https://www.php.net/manual/en/function.chmod.php#96086). The file will be named using the current date and time in the format of `Y-m-d_H:i:s`. This will be output as `yyyy-MM-dd_hh:mm:ss`. Next, it gets the printer IP address and port number from the `jobs` table in the `quick` database. Using the IP and port number, it creates a new NetworkPrintConnector, sends the file contents over to the printer and deletes the file. 
+This seems to be putting a file in `/var/www/jobs`, then chmod to 0777, [which doesn't work because it's in quotes](https://www.php.net/manual/en/function.chmod.php#96086). The file will be named using the current date and time in the format of `Y-m-d_H:i:s`. Next, it gets the printer IP address and port number from the `jobs` table in the `quick` database. Using the IP and port number, it creates a new NetworkPrintConnector, sends the file contents over to the printer and deletes the file. 
 
 This means we need to be *quick*. Let's write a bash script to watch for and execute any file that matches `2020-08-24_*` in the `/var/www/jobs` directory. 
 
