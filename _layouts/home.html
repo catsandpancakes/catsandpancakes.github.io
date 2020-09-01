@@ -22,8 +22,10 @@ layout: default
           {{ post.title | escape }}
         </a>
       </h1>
-      {{ post.excerpt }}
-  <h3><a href="{{ post.url | relative_url }}"><br/>Continue Reading...</a></h3>
+      <div class="post-content e-content">
+        {{ post.excerpt }}
+        <h4><a href="{{ post.url | relative_url }}"><br/>Continue Reading...</a></h4>
+      </div>
   <br />
   <hr />
     </li>
