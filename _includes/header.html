@@ -19,13 +19,14 @@
         <div class="trigger">
           {% if page.url == "/" %}
             <span class="page-link"><u>Home</u></span>
+            <!-- fix the Home page underline for /page2/ onwards. -->
           {% else %}
             <a class="page-link" href="/">Home</a>
           {% endif %}
 
           {% for singlePage in site.pages %}
             {% if singlePage.title %}
-                {% if singlePage.url == page.url %}
+                {% if page.url == singlePage.url %}
                   <span class="page-link"><u>{{ singlePage.title | escape }}</u></span>
                 {% else %}
                   <a class="page-link" href="{{ singlePage.url }}">{{ singlePage.title | escape }}</a>
