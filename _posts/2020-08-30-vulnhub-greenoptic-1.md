@@ -45,7 +45,7 @@ That didn't work, so let's move on to the web server on port 80.
 
 ![8dcc3ec51c5a3c4ddbb41f11bf0d122f.png](/images/vh-greenoptic1/d33be290319e4d8882508538d7924d17.png)
 
-First, let's see if this is running on html or php by appending  `/index.html` and `index.php` to the page. 
+First, let's see if this is running on html or php by appending  `/index.html` and `/index.php` to the page. 
 
 ![a398389af75ee053eb3a3bd4bf4eefaa.png](/images/vh-greenoptic1/aa09560f25aa47e2b78a55524184b98a.png)
 
