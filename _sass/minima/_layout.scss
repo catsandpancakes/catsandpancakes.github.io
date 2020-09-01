@@ -24,7 +24,7 @@
 }
 
 .previous{
-  font-size: x-large;
+  font-size: large;
   color: $brand-color;
 
   &:visited{
@@ -38,12 +38,12 @@
 
 .previous_inactive{
   vertical-align: middle;
-  font-size: x-large;
+  font-size: large;
   color: rgb(200,200,200);
 }
 
 .next{
-  font-size: x-large;
+  font-size: large;
   color: $brand-color;
   
   &:visited{
@@ -57,14 +57,20 @@
 
 .next_inactive{
   vertical-align: middle;
-  font-size: x-large;
+  font-size: large;
   color: rgb(200,200,200);
 }
 
 .page_number{
   font-size: large;
   vertical-align: middle;
-  color: rgb(0,0,0);
+  color: $brand-color;
+}
+
+.current_page{
+  font-size: large;
+  vertical-align: middle;
+  color: $black-color;
 }
 
 /**

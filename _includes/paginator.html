@@ -8,9 +8,17 @@
         <span class="previous_inactive">&NestedLessLess;</span>
         <span class="previous_inactive">&lt;</span>
       {% endif %}
-      <span class="page_number">
-        Page {{ paginator.page }}/{{ paginator.total_pages }}
-      </span>
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="current_page">{{ page }}</span>
+        {% elsif page == 1 %}
+          <a class="page_number" href="/">{{ page }}</a>
+        {% else %}
+          <a class="page_number" href="/page{{ page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="next">&gt;</a>
         <a href="/page{{ paginator.total_pages }}" class="next">&NestedGreaterGreater;</a>

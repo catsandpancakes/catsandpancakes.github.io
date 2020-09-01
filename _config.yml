@@ -31,7 +31,7 @@ plugins:
   - jekyll-paginate
 
 # Paginator Settings
-paginate: 4
+paginate: 3
 
 # Build settings
 theme: minima
