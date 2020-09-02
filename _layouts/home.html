@@ -18,13 +18,14 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%A, %d %B %Y" -%}
       <span class="post-meta">🕑 {{ post.date | date: date_format }} | 💻 ricepancakes | 📖 {{ est_time }} minutes</span>
       <h1>
-        <a class="" href="{{ post.url | relative_url }}">
+        <a class="post-title-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h1>
       <div class="post-content e-content">
         {{ post.excerpt }}
-        <h4><a href="{{ post.url | relative_url }}"><br/>Continue Reading...</a></h4>
+        <br/>
+        <h4><a class="post-continue-link" href="{{ post.url | relative_url }}">Continue Reading...</a></h4>
       </div>
   <br />
   <hr />

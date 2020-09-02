@@ -120,7 +120,7 @@ hr {
  * Links
  */
 a {
-  color: $brand-color;
+  color: rgb(0, 51, 218);
   text-decoration: none;
 
   /*&:visited {
@@ -128,8 +128,8 @@ a {
   }*/
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: rgb(45, 94, 255);
+    text-decoration: none;
   }
 
   .social-media-list &:hover {

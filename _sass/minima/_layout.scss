@@ -11,7 +11,8 @@
 
 .pagination a, .pagination span{
   padding: 5px 10px;
-  border: 1px solid $grey-color-light;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 7px;
   background-color: $background-color;
   display: inline-block;
 }
@@ -22,7 +23,7 @@
   &:hover{
     vertical-align: middle;
     background-color: #f1f1f1;
-    color: #333;
+    color: $black-color;
   }
 }
 
@@ -32,10 +33,10 @@
 
 .previous{
   font-size: large;
-  color: $brand-color;
+  color: $black-color;
 
   &:visited{
-    color: $brand-color;
+    color: $black-color;
   }
 
   &:hover{
@@ -51,10 +52,10 @@
 
 .next{
   font-size: large;
-  color: $brand-color;
+  color: $black-color;
   
   &:visited{
-    color: $brand-color;
+    color: $black-color;
   }
 
   &:hover{
@@ -71,13 +72,23 @@
 .page_number{
   font-size: large;
   vertical-align: middle;
-  color: $brand-color;
+  color: $black-color;
+
+  &:visited{
+    color: $black-color;
+  }
+
+  &:hover{
+    color: $black-color;
+    text-decoration: none;
+  }
 }
 
 .current_page{
   font-size: large;
   vertical-align: middle;
   color: $black-color;
+  text-decoration: underline;
 }
 
 /**
@@ -105,6 +116,10 @@
     //color: $grey-color-dark;
     color: $black-color;
   }
+
+  &:hover{
+    color: rgb(80, 80, 80);
+  }
 }
 
 .site-nav {
@@ -128,6 +143,10 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover{
+      color: rgb(80, 80, 80);
     }
   }
 
@@ -292,6 +311,37 @@
   @include relative-font-size(1.5);
 }
 
+.post-title-link {
+  color: $black-color;
+  text-decoration: none;
+
+  &:visited{
+    color: $black-color;
+  }
+
+  &:hover{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+  }
+}
+
+.post-continue-link {
+  color: $black-color;
+  padding: 5px 10px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 7px;
+  vertical-align: middle;
+  display: inline-flex;
+
+  &:visited{
+    color: $black-color;
+  }
+
+  &:hover{
+    background-color: #f1f1f1;
+    text-decoration: none;
+  }
+}
 
 
 /**
