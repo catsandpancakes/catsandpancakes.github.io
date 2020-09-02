@@ -33,6 +33,7 @@ plugins:
 
 # Paginator Settings
 paginate: 3
+paginate_path: :num/
 
 # Build settings
 theme: minima

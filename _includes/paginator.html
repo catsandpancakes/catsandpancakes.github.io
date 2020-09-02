@@ -15,13 +15,13 @@
         {% elsif page == 1 %}
           <a class="page_number" href="/">{{ page }}</a>
         {% else %}
-          <a class="page_number" href="/page{{ page }}">{{ page }}</a>
+          <a class="page_number" href="/{{ page }}/">{{ page }}</a>
         {% endif %}
       {% endfor %}
 
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="next">&gt;</a>
-        <a href="/page{{ paginator.total_pages }}" class="next">&NestedGreaterGreater;</a>
+        <a href="/{{ paginator.total_pages }}/" class="next">&NestedGreaterGreater;</a>
       {% else %}
         <span class="next_inactive">&gt;</span>
         <span class="next_inactive">&NestedGreaterGreater;</span>
