@@ -367,7 +367,7 @@ input[type=text]{
   }
 
   &:hover{
-    background-color: #f1f1f1;
+    background-color: $grey-color-custom;
     text-decoration: none;
   }
 }
