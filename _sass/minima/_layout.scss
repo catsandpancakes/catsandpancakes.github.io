@@ -368,6 +368,7 @@ input[type=text]{
 
   &:hover{
     background-color: $grey-color-custom;
+    color: $black-color;
     text-decoration: none;
   }
 }
