@@ -18,7 +18,7 @@
 
         <div class="trigger">
           {% if page.url == "/" %}
-            <span class="page-link"><u>Home</u></span>
+            <span class="page-link-current">Home</span>
           {% elsif paginator.page %}
             <a class="page-link" href="/"><u>Home</u></a>
           {% else %}
@@ -28,7 +28,7 @@
           {% for singlePage in site.pages %}
             {% if singlePage.title %}
                 {% if page.url == singlePage.url %}
-                  <span class="page-link"><u>{{ singlePage.title | escape }}</u></span>
+                  <span class="page-link-current">{{ singlePage.title | escape }}</span>
                 {% else %}
                   <a class="page-link" href="{{ singlePage.url }}">{{ singlePage.title | escape }}</a>
                 {% endif %}

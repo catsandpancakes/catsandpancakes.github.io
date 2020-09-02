@@ -19,10 +19,3 @@ My preferred code editor of choice is [Visual Studio Code](https://code.visualst
 ## Contact
 
 If you need to contact me, you may do so through [email](mailto:ricepancakes@protonmail.com) or by dropping me a message at the [HackTheBox Forums](https://forum.hackthebox.eu/profile/ricepancakes).
-
-## To-Do
-
-In no particular order, things I want to try implementing: 
-- Lazy Loading/Infinite Scrolling for Pagination
-- A sidebar for categories/tags
-- A search bar

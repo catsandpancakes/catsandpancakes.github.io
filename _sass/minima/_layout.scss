@@ -1,9 +1,28 @@
 /**
- * General
+ * Search
  */
 
+.search-link{
+  font-size: large;
+  display: inline-block;
+}
 
+input[type=text]{
+  border: 1px solid $grey-color-custom;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: large;
+  width: 100%;
+  display: inline-block;
 
+  &:focus{
+    border: 1px solid $black-color;
+  }
+
+  &:focus::placeholder{
+    color: transparent;
+  }
+}
 
 /**
  * Pagination
@@ -11,7 +30,7 @@
 
 .pagination a, .pagination span{
   padding: 5px 10px;
-  border: 1px solid rgb(194, 194, 194);
+  border: 1px solid $grey-color-custom;
   border-radius: 7px;
   background-color: $background-color;
   display: inline-block;
@@ -22,7 +41,7 @@
 
   &:hover{
     vertical-align: middle;
-    background-color: #f1f1f1;
+    background-color: $grey-color-custom;
     color: $black-color;
   }
 }
@@ -84,7 +103,7 @@
   }
 }
 
-.current_page{
+.page_current{
   font-size: large;
   vertical-align: middle;
   color: $black-color;
@@ -147,6 +166,16 @@
 
     &:hover{
       color: rgb(80, 80, 80);
+    }
+  }
+
+  .page-link-current{
+    color: $text-color;
+    line-height: $base-line-height;
+    text-decoration: underline;
+
+    &:not(:last-child){
+      margin-right: 20px;
     }
   }
 
@@ -328,7 +357,7 @@
 .post-continue-link {
   color: $black-color;
   padding: 5px 10px;
-  border: 1px solid rgb(194, 194, 194);
+  border: 1px solid $grey-color-custom;
   border-radius: 7px;
   vertical-align: middle;
   display: inline-flex;
