@@ -15,6 +15,7 @@ permalink: /search/
 
 <!-- Script pointing to search-script.js -->
 <script src="/search/search.js" type="text/javascript"></script>
+<noscript>Please enable JavaScript for search to work.</noscript>
 
 <!-- Configuration -->
 <script>
