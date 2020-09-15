@@ -10,7 +10,7 @@ date: 2020-09-15 23:15:00 +0800
 
 ### 0. Preface
 
-This box is pretty long, but relatively easy (**YMMV**). This just requires a ton of enumeration and knowing what to exploit. [GTFOBins](gtfobins.github.io/) is really your best friend in this box. Having knowledge of how SSH tunneling works is helpful too. 
+This box is pretty long, but relatively easy (**YMMV**). This just requires a ton of enumeration and knowing what to exploit. [GTFOBins](https://gtfobins.github.io/) is really your best friend in this box. Having knowledge of how SSH tunneling works is helpful too. 
 
 `tmux` makes this box a lot less of a headache. 
 
