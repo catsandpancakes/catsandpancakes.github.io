@@ -25,6 +25,37 @@
             <a class="page-link" href="/">Home</a>
           {% endif %}
 
+          {% if page.url == "/about/" %}
+            <span class="page-link-current"><u>About</u></span>
+          {% else %}
+            <a class="page-link" href="/about">About</a>
+          {% endif %}
+
+          {% if page.url == "/resources/" %}
+            <span class="page-link-current"><u>Resources</u></span>
+          {% else %}
+            <a class="page-link" href="/resources">Resources</a>
+          {% endif %}
+
+          {% if page.url == "/tools/" %}
+            <span class="page-link-current"><u>Tools</u></span>
+          {% else %}
+            <a class="page-link" href="/tools">Tools</a>
+          {% endif %}
+          
+          {% if page.url == "/rss/" %}
+            <span class="page-link-current"><u>RSS</u></span>
+          {% else %}
+            <a class="page-link" href="/rss">RSS</a>
+          {% endif %}
+
+          {% if page.url == "/search/" %}
+            <span class="page-link-current"><u>Search</u></span>
+          {% else %}
+            <a class="page-link" href="/search">Search</a>
+          {% endif %}
+
+            <!--
           {% for singlePage in site.pages %}
             {% if singlePage.title %}
                 {% if page.url == singlePage.url %}
@@ -34,6 +65,7 @@
                 {% endif %}
             {% endif %}
           {% endfor %}
+          -->
         </div>
       </nav>
     {%- endif -%}

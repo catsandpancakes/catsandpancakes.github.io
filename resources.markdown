@@ -17,4 +17,3 @@ If you have any suggestions, or if you want me to remove your page from this lis
 - [IppSec.Rocks](https://ippsec.rocks) - A searchable list of [IppSec videos](https://www.youtube.com/c/ippsec). 
 - [SecLists](https://github.com/danielmiessler/SecLists) - A very useful collection of wordlists for fuzzing or dictionary attacks, by danielmiessler on Github. 
 - [Upgrading to Full Interactive TTY using Python](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/#method-3-upgrading-from-netcat-with-magic) - I do this on every non-interactive *nix reverse shell I catch (of course, python needs to be installed).
-- [Chisel](https://github.com/jpillora/chisel) - TCP tunnel over SSH, handy for bypassing firewall restrictions via port forwarding/reverse port forwarding, by jpillora on Github. 
