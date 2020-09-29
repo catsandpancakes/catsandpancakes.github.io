@@ -8,7 +8,7 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 	    {%- assign est_time = page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 400 | plus: 1 -%}
         {%- assign date_format = site.minima.date_format | default: "%A, %d %B %Y" -%}
-        🕑 {{ page.date | date: date_format }} | 💻 ricepancakes | 📖 {{ est_time }} minutes
+        🕑 {{ page.date | date: date_format }} | 📖 {{ est_time }} minutes
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>

@@ -1,0 +1,82 @@
+// Cosmetic
+@if $pages-cosmetics == true {
+  .pagination {
+    padding: 0;
+    margin: $pages-margin;
+    text-align: center;
+
+    li {
+      margin: $pages-item-margin;
+      list-style: none;
+
+      &.previous{
+        .pagination-item{
+          text-decoration: none;
+          border: 1px solid $grey-color-custom;
+          border-radius: 7px;
+          padding: 6px 8.85px;
+          color: $black-color;
+        }
+
+        .pagination-inactive{
+          text-decoration: none;
+          border: 1px solid $grey-color-custom;
+          border-radius: 7px;
+          padding: 7.2px 8.85px;
+          color: $grey-color-custom;
+        }
+
+        a:hover{
+          background: $grey-color-custom;
+        }
+      }
+
+      &.next{
+        .pagination-item{
+          text-decoration: none;
+          border: 1px solid $grey-color-custom;
+          border-radius: 7px;
+          padding: 6px 8.85px;
+          color: $black-color;
+        }
+
+        .pagination-inactive{
+          text-decoration: none;
+          border: 1px solid $grey-color-custom;
+          border-radius: 7px;
+          padding: 7.2px 8.85px;
+          color: $grey-color-custom;
+        }
+
+        a:hover{
+          background-color: $grey-color-custom;
+        }
+      }
+
+      &.page {
+        .pagination-item {
+          text-decoration: none; // No underlines on circle links
+          padding: 0px 10px;
+          border: 1px solid $grey-color-custom;
+          border-radius: 7px;
+          line-height: $pages-item-size;
+          background: $background-color;
+          color: $pages-item-color;
+          box-shadow: $pages-item-shadow;
+          display: inline-block;
+        }
+        
+        a:hover {
+          background: $grey-color-custom;
+        }
+
+        &.current-page {
+          .pagination-item {
+            background: $grey-color-custom;
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+}

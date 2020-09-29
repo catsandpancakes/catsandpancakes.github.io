@@ -25,73 +25,6 @@ input[type=text]{
 }
 
 /**
- * Pagination
- */
-
-.pagination a, .pagination span{
-  padding: 5px 10px;
-  border: 1px solid $grey-color-custom;
-  border-radius: 7px;
-  background-color: $background-color;
-  display: inline-block;
-}
-
-.pagination a{
-  vertical-align: middle;
-
-  &:hover{
-    vertical-align: middle;
-    background-color: $grey-color-custom;
-    color: $black-color;
-  }
-}
-
-.pagination{
-  text-align: left;
-}
-
-.page-btn{
-  font-size: large;
-  color: $black-color;
-
-  &:visited{
-    color: $black-color;
-  }
-
-  &:hover{
-    text-decoration: none;
-  }
-}
-
-.page-btn_inactive{
-  vertical-align: middle;
-  font-size: large;
-  color: rgb(200,200,200);
-}
-
-.page_number{
-  font-size: large;
-  vertical-align: middle;
-  color: $black-color;
-
-  &:visited{
-    color: $black-color;
-  }
-
-  &:hover{
-    color: $black-color;
-    text-decoration: none;
-  }
-}
-
-.page_current{
-  font-size: large;
-  vertical-align: middle;
-  color: $black-color;
-  text-decoration: underline;
-}
-
-/**
  * Site header
  */
 .site-header {
@@ -238,6 +171,7 @@ input[type=text]{
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
+  font-size: 0.85rem;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -249,8 +183,8 @@ input[type=text]{
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {

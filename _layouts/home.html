@@ -7,7 +7,6 @@ layout: default
     <div class="post-title">Home</div>
   </header>
 
-  {% include paginator.html %}
   {{ content }}
 
   <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
@@ -16,7 +15,7 @@ layout: default
     <li>
       {%- assign est_time = post.content | strip_html | strip_newlines | remove: " " | size | divided_by: 400 | plus: 1 -%}
       {%- assign date_format = site.minima.date_format | default: "%A, %d %B %Y" -%}
-      <span class="post-meta">🕑 {{ post.date | date: date_format }} | 💻 ricepancakes | 📖 {{ est_time }} minutes</span>
+      <span class="post-meta">🕑 {{ post.date | date: date_format }} | 📖 {{ est_time }} minutes</span>
       <h1>
         <a class="post-title-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
@@ -34,4 +33,4 @@ layout: default
   </ul>
 </div>
 
-{% include paginator.html %}
+{% include pagination.html %}
