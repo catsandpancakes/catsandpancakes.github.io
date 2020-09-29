@@ -20,8 +20,8 @@ permalink: /search/
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
-searchInput: document.getElementById('search-input'),
-resultsContainer: document.getElementById('results-container'),
-json: '/search/search.json'
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search/search.json'
 })
 </script>

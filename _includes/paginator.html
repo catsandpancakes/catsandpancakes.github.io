@@ -2,11 +2,9 @@
 <h1>
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="/" class="previous">&NestedLessLess;</a>
-        <a href="{{ paginator.previous_page_path }}" class="previous">&lt;</a>
+        <a href="{{ paginator.previous_page_path }}" class="page-btn">&lt;</a>
       {% else %}
-        <span class="previous_inactive">&NestedLessLess;</span>
-        <span class="previous_inactive">&lt;</span>
+        <span class="page-btn_inactive">&lt;</span>
       {% endif %}
 
       {% for page in (1..paginator.total_pages) %}
@@ -20,11 +18,9 @@
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">&gt;</a>
-        <a href="/{{ paginator.total_pages }}/" class="next">&NestedGreaterGreater;</a>
+        <a href="{{ paginator.next_page_path }}" class="page-btn">&gt;</a>
       {% else %}
-        <span class="next_inactive">&gt;</span>
-        <span class="next_inactive">&NestedGreaterGreater;</span>
+        <span class="page-btn_inactive">&gt;</span>
       {% endif %}
     </div>
 </h1>
