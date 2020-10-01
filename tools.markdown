@@ -15,3 +15,5 @@ If you have any suggestions, or if you feel that a better tool is out there, do 
 - [Nishang](https://github.com/samratashok/nishang) - A collection of offensive PowerShell scripts which are handy for attacking Windows boxes, by samratashok on Github.
 - [Pypykatz](https://github.com/skelsec/pypykatz) - Basically, Mimikatz written in Python, by skelsec on Github. Pypykatz allows you to dump hashes on your local machine, which I feel is a big plus over Mimikatz. 
 - [ysoserial](https://github.com/frohoff/ysoserial) - Serialise everything, by frohoff on Github. 
+- [Ghidra](https://ghidra-sre.org/) - A reverse engineering application developed by the NSA. I have only ever used this on Linux binaries, but it should work on Windows binaries as well. 
+- [dnSpy](https://github.com/0xd4d/dnSpy) - A debugger and assembly editor for .NET applications, by 0xd4d on Github. This is very useful for reversing .NET code as well. 
